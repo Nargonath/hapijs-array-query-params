@@ -1,0 +1,36 @@
+{
+  "name": "hapijs-array-query-params",
+  "version": "1.0.0",
+  "description": "This is an example used to illustrate a blog post about sending array as query parameters",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nargonath/hapijs-array-query-params.git"
+  },
+  "keywords": [
+    "hapijs",
+    "javascript",
+    "axios",
+    "blog",
+    "blog-post",
+    "blog-article"
+  ],
+  "author": "Nargonath <jonas.pauthier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nargonath/hapijs-array-query-params/issues"
+  },
+  "homepage": "https://github.com/Nargonath/hapijs-array-query-params#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "hapi": "^18.1.0",
+    "joi": "^14.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
