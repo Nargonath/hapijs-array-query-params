@@ -4,6 +4,7 @@ const Joi = require('joi')
 const server = Hapi.server({
   port: 3100,
   host: 'localhost',
+  routes: { cors: true },
 })
 
 server.route({
