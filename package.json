@@ -4,9 +4,10 @@
   "description": "This is an example used to illustrate a blog post about sending array as query parameters",
   "main": "client.js",
   "scripts": {
-    "start:query-setting": "nodemon server-query-setting.js",
-    "start:joi-example": "nodemon server-joi-example.js",
-    "start:client": "webpack-dev-server client.js",
+    "start": "concurrently \"npm:start-query-setting\" \"npm:start-joi-example\" \"npm:start-client\"",
+    "start-query-setting": "nodemon server-query-setting.js",
+    "start-joi-example": "nodemon server-joi-example.js",
+    "start-client": "webpack-dev-server client.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,6 +34,7 @@
     "qs": "^6.6.0"
   },
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "nodemon": "^1.18.10",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
